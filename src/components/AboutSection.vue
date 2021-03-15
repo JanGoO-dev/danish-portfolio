@@ -9,12 +9,12 @@
                     <div class="section-heading">
                         <h2>About <strong>Me</strong></h2>
                     </div>
-                    <p class="lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <p class="mb-5  ">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p class="lead">As I believe in myself of being passionate and creative about designing, I am looking for good career growth opportunities where my talent and knowledge could be best subjected and utilized in order to deliver my best for the pride and passion for the organization and for personal growth.</p>
+                    <p class="mb-5  ">There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.</p>
 
                     <p>
                         <a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
-                        <a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+                        <a href="#" class="btn btn-secondary px-4 py-2 btn-sm ml-3">Download CV</a>
                     </p>
                 </div>
             </div>

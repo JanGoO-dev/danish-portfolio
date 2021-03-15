@@ -1,0 +1,22 @@
+{
+    "personalDetails": {
+        "name": "Danish Fareed",
+        "tagLine": "and this is my Resume"
+    },
+    "projectsDetails": {
+        "dataFilterClasses": [
+            "packaging",
+            "mockup",
+            "typography",
+            "photography"
+        ],
+        "featuredProjects": [
+            { "projectTitle": "Square Box Mockup", "tagClass": "mockup", "porjectImage": "/static/images/p1.jpg" },
+            { "projectTitle": "Product Box Package Mockup", "tagClass": "mockup", "porjectImage": "/static/images/p2.jpg" },
+            { "projectTitle": "Creative Package Design", "tagClass": "packaging", "porjectImage": "/static/images/p3.jpg" },
+            { "projectTitle": "Packaging Brand", "tagClass": "packaging", "porjectImage": "/static/images/p4.jpg" },
+            { "projectTitle": "Isometric 3D Extrusion", "tagClass": "typography", "porjectImage": "/static/images/p5.jpg" },
+            { "projectTitle": "White Space Photography", "tagClass": "photography", "porjectImage": "/static/images/p6.jpg" }
+        ]
+    }
+}

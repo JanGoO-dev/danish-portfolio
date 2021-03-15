@@ -1,13 +1,12 @@
 <template>
   
   <nav-bar />
-  <hero-section image="/static/images/image_1.jpg" />
+  <hero-section image="/static/images/image_1.jpg" :name="name" :tagLine="tagLine" />
   <portfolio-section />
   <resume-section />
   <about-section />
   <client-section />
   <services-section />
-  <blog-section />
   <contact-section />
   <footer-section />
 
@@ -16,7 +15,6 @@
 <script>
 
 import AboutSection from "./components/AboutSection.vue";
-import BlogSection from "./components/BlogSection.vue";
 import ClientSection from "./components/ClientSection.vue";
 import ContactSection from "./components/ContactSection.vue";
 import HeroSection from "./components/HeroSection.vue";
@@ -36,9 +34,16 @@ export default {
     AboutSection,
     ClientSection,
     ServicesSection,
-    BlogSection,
     ContactSection,
     FooterSection
+  },
+  computed: {
+    name() {
+      return this.$store.getters.get_hero_section_name;
+    },
+    tagLine() {
+      return this.$store.getters.get_hero_Section_tagLine;
+    }
   }
 };
 </script>
