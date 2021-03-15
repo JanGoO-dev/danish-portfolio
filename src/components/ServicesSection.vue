@@ -14,7 +14,7 @@
 				<div class="col-md-4 col-lg-3 text-center mb-4">
 					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
 						<span class="icon">
-							<span class="icon-browser2"></span>
+							<span class="icon-tools2"></span>
 						</span>
 						<h3>Logo Design</h3>
 					</div>
@@ -22,39 +22,7 @@
 				<div class="col-md-4 col-lg-3 text-center mb-4">
 					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
 						<span class="icon">
-							<span class="icon-presentation"></span>
-						</span>
-						<h3>UI/UX Design</h3>
-					</div>
-				</div>
-				<div class="col-md-4 col-lg-3 text-center mb-4">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-video2"></span>
-						</span>
-						<h3>Photo Editting</h3>
-					</div>
-				</div>
-				<div class="col-md-4 col-lg-3 text-center mb-4">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-video2"></span>
-						</span>
-						<h3>Photo Retouching</h3>
-					</div>
-				</div>
-				<div class="col-md-4 col-lg-3 text-center mb-4">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-video2"></span>
-						</span>
-						<h3>Poster/Banner Design</h3>
-					</div>
-				</div>
-				<div class="col-md-4 col-lg-3 text-center mb-4">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
-						<span class="icon">
-							<span class="icon-video2"></span>
+							<span class="icon-pencil3"></span>
 						</span>
 						<h3>Illustration</h3>
 					</div>
@@ -62,7 +30,39 @@
 				<div class="col-md-4 col-lg-3 text-center mb-4">
 					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
 						<span class="icon">
-							<span class="icon-video2"></span>
+							<span class="icon-browser2"></span>
+						</span>
+						<h3>UI/UX Design</h3>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-3 text-center mb-4">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-picture"></span>
+						</span>
+						<h3>Photo Editting</h3>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-3 text-center mb-4">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-pictures"></span>
+						</span>
+						<h3>Photo Retouching</h3>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-3 text-center mb-4">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-paintbrush"></span>
+						</span>
+						<h3>Poster/Banner Design</h3>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-3 text-center mb-4">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-edit2"></span>
 						</span>
 						<h3>Business Card Design</h3>
 					</div>
@@ -70,7 +70,7 @@
 				<div class="col-md-4 col-lg-3 text-center mb-4">
 					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
 						<span class="icon">
-							<span class="icon-video2"></span>
+							<span class="icon-expand"></span>
 						</span>
 						<h3>Image Tracing</h3>
 					</div>
