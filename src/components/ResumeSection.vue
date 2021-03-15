@@ -7,27 +7,11 @@
 						<h2>My <strong>Resume</strong></h2>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<h2 class="mb-5">Education</h2>
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-						<h3>Masteral in Information Technology</h3>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-						<span class="school">New York University</span>
-					</div>
-
-				</div>
-				<div class="col-md-6">
-
-
-					<h2 class="mb-5">Experience</h2>
-
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-						<h3>Lead Product Designer</h3>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-						<span class="school">Github</span>
-					</div>
+				<div class="col-md-12">
+					
+					<a href="https://drive.google.com/file/d/1xeTN_UEUKNuM46tSql7ZjZsaSeQJ5jnx/preview" target="_blank">
+						<img src="/static/images/resume.svg" alt="Danish Fareed Resume SVG" draggable="false">
+					</a>
 
 				</div>
 			</div>
