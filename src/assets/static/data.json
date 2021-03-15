@@ -1,22 +1,22 @@
 {
     "personalDetails": {
         "name": "Danish Fareed",
-        "tagLine": "and this is my Resume"
+        "tagLine": "My Name is "
     },
     "projectsDetails": {
         "dataFilterClasses": [
-            "packaging",
-            "mockup",
-            "typography",
-            "photography"
+            "logo",
+            "app",
+            "web",
+            "mockup"
         ],
         "featuredProjects": [
-            { "projectTitle": "Square Box Mockup", "tagClass": "mockup", "porjectImage": "/static/images/p1.jpg" },
-            { "projectTitle": "Product Box Package Mockup", "tagClass": "mockup", "porjectImage": "/static/images/p2.jpg" },
-            { "projectTitle": "Creative Package Design", "tagClass": "packaging", "porjectImage": "/static/images/p3.jpg" },
-            { "projectTitle": "Packaging Brand", "tagClass": "packaging", "porjectImage": "/static/images/p4.jpg" },
-            { "projectTitle": "Isometric 3D Extrusion", "tagClass": "typography", "porjectImage": "/static/images/p5.jpg" },
-            { "projectTitle": "White Space Photography", "tagClass": "photography", "porjectImage": "/static/images/p6.jpg" }
+            { "projectTitle": "Square Box Mockup", "tagClass": "logo", "porjectImage": "/static/images/p1.jpg" },
+            { "projectTitle": "Product Box Package Mockup", "tagClass": "logo", "porjectImage": "/static/images/p2.jpg" },
+            { "projectTitle": "Creative Package Design", "tagClass": "app", "porjectImage": "/static/images/p3.jpg" },
+            { "projectTitle": "Packaging Brand", "tagClass": "web", "porjectImage": "/static/images/p4.jpg" },
+            { "projectTitle": "Isometric 3D Extrusion", "tagClass": "app", "porjectImage": "/static/images/p5.jpg" },
+            { "projectTitle": "White Space Photography", "tagClass": "mockup", "porjectImage": "/static/images/p6.jpg" }
         ]
     }
 }

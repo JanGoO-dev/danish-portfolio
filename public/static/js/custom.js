@@ -123,8 +123,10 @@
 
 			if ( st > 200 ) {
 				navbar.addClass('scrolled');
+				navbar.addClass('shadow-lg');
 			} else {
 				navbar.removeClass('scrolled awake');
+				navbar.removeClass('shadow-lg');
 			}
 
 			if ( navbar.hasClass('scrolled') && st > 300 ) {

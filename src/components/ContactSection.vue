@@ -21,10 +21,10 @@
 							<input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
 						</div>
 						<div class="form-group mb-5">
-							<textarea class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message"></textarea>
+							<textarea class="form-control px-3 py-3" cols="30" rows="6" placeholder="Write a Message"></textarea>
 						</div>
 						<div class="form-group">
-							<input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
+							<input type="submit" class="btn btn-warning text-white  px-4 py-3" value="Send Message">
 						</div>
 					</form>
 				</div>
@@ -32,22 +32,20 @@
 					<h3 class="mb-5">My Contact Details</h3>
 					<ul class="site-contact-details">
 						<li>
-							<span class="text-uppercase">Email</span>
-							site@gmail.com
+							<span class="text-uppercase text-warning">Email</span>
+							danishfareed655@gmail.com
 						</li>
 						<li>
-							<span class="text-uppercase">Phone</span>
-							+30 976 1382 9921
+							<span class="text-uppercase text-warning">Fax</span>
+							+92 300 69 45 054
+							<br>
+							+92 308 47 73 301
 						</li>
 						<li>
-							<span class="text-uppercase">Fax</span>
-							+30 976 1382 9922
-						</li>
-						<li>
-							<span class="text-uppercase">Address</span>
-							San Francisco, CA <br>
-							4th Floor8 Lower  <br>
-							San Francisco street, M1 50F
+							<span class="text-uppercase text-warning">Address</span>
+							Street 4 <br>
+							Peer Karian <br>
+							Punjab, Pakistan
 						</li>
 					</ul>
 				</div>

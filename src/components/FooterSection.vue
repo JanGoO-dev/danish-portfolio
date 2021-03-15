@@ -5,7 +5,7 @@
 			<div class="row mb-5">
 				<p class="col-12 text-center">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy; All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true" ></i> by <a href="#" target="_blank" class="text-primary">Colorlib</a>
+					Copyright &copy; All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true" ></i> by <a href="#" target="_blank" class="text-warning">Asad Ali</a>
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				</p>
 			</div>
@@ -17,7 +17,10 @@
 						<a href="#" class="social-item"><span class="icon-twitter"></span></a>
 						<a href="#" class="social-item"><span class="icon-instagram2"></span></a>
 						<a href="#" class="social-item"><span class="icon-linkedin2"></span></a>
-						<a href="#" class="social-item"><span class="icon-vimeo"></span></a>
+						<a href="#" class="social-item"><span class="icon-behance"></span></a>
+						<a href="#" class="social-item"><span class="icon-dribbble"></span></a>
+						<a href="#" class="social-item"><span class="icon-skype"></span></a>
+						<a href="#" class="social-item"><span class="icon-youtube"></span></a>
 					</p>
 				</div>
 			</div>

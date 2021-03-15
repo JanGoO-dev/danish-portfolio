@@ -1,42 +1,20 @@
 <template>
-  <section class="site-hero" :style="{ backgroundImage: 'url(' + image + ')' }" id="section-home" data-stellar-background-ratio="0.5">
-		
-		<div class="container-fluid">
-			<div class="row intro-text align-items-center justify-content-center">
-				<div class="col-md-10 text-center pt-5">
-
-					<h1 class="site-heading site-animate">
-						<!-- Hello, I'm  -->
-						<!-- <strong class="d-block">
-							{{ name }}
-						</strong> -->
-						<strong class="d-block text-white text-uppercase letter-spacing">{{ tagLine + name }}</strong>
-					</h1>
-						<div class="container">
-							<h1>I'm 
-							<span class="typed-text"><strong>{{ typeValue }}</strong></span>
-							<span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
-							</h1>
-						</div>
-
-				</div>
-			</div>
-		</div>
-
-	</section>
+  <div class="container">
+    <h1>Coding is
+      <span class="typed-text">{{ typeValue }}</span>
+      <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
+    </h1>
+  </div>
 </template>
 
 <script>
 import { setTimeout } from 'timers';
-
-export default {
-    name: "HeroSection",
-	props: ['image', 'name', 'tagLine'],
+  export default {
     data: () => {
       return {
         typeValue: '',
         typeStatus: false,
-        typeArray: ['UI/UX Designer', 'Photo Editor', 'Business Card Designer'],
+        typeArray: ['fun', 'awesome', 'a journey', 'life'],
         typingSpeed: 200,
         erasingSpeed: 100,
         newTextDelay: 2000,
@@ -78,23 +56,37 @@ export default {
     created() {
       setTimeout(this.typeText, this.newTextDelay + 200);
     }
-}
+  }
 </script>
 
-<style>
-.cursor {
-	display: inline-block;
-	margin-left: 3px;
-	width: 4px;
-	background-color: #FFCC01;
-	animation: cursorBlink 1s infinite;
-}
-.typing {
-	animation: none;
-}
-@keyframes cursorBlink {
-	49% { background-color: #FFCC01; }
-	50% { background-color: transparent; }
-	99% { background-color: transparent; }
-}
+<style lang="scss" scoped>
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 6rem;
+    font-weight: normal;
+    span.typed-text {
+      color: #D2B94B;
+    }
+    span.cursor {
+      display: inline-block;
+      margin-left: 3px;
+      width: 4px;
+      background-color: #fff;
+      animation: cursorBlink 1s infinite;
+    }
+    span.cursor.typing {
+      animation: none;
+    }
+  }
+  @keyframes cursorBlink {
+    49% { background-color: #fff; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+  }
 </style>
