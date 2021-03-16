@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import Dashboard from "../views/Dashboard.vue";
 
 const routes = [
   {
@@ -9,6 +10,11 @@ const routes = [
     meta: {
       reload: true,
     },
+  },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    component: Dashboard
   }
 ];
 
