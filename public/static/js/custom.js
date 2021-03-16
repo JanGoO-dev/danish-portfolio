@@ -142,6 +142,22 @@
 		      // }
 		   	}
 		   	lastScrollTop = st;
+			
+			var dabba = $('.dabba');
+
+			if (st < 1000) {
+				if (st > 900) {
+					dabba.removeClass('invisible');
+				}
+				dabba.slideUp();
+			} else if (st > 2000 & st < 4000) {
+				dabba.slideUp();
+			} else if (st > 6400) {
+				dabba.slideUp();
+			} else {
+				dabba.slideDown();
+				dabba.removeClass('invisible');
+			}
 		  }
 
 		});

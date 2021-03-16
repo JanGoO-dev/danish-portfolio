@@ -13,15 +13,16 @@
             <!-- <strong class="d-block">
 							{{ name }}
 						</strong> -->
-            <strong class="d-block text-white text-uppercase letter-spacing">{{
-              tagLine + name
-            }}</strong>
+            <span class="d-block text-white text-uppercase letter-spacing">
+              <div class="h3">{{ tagLine }} </div>
+              <strong class="text-light display-4 name">{{ name }}</strong>
+            </span>
           </h1>
           <div class="container">
             <h1>
-              I'm expert in
+              I have experience in
               <span class="typed-text"
-                ><strong>{{ typeValue }}</strong></span
+                ><strong class="text-warning">{{ typeValue }}</strong></span
               >
               <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
             </h1>
@@ -42,7 +43,7 @@ export default {
     return {
       typeValue: "",
       typeStatus: false,
-      typeArray: ["UI/UX Designer", "Photo Editor", "Business Card Designer"],
+      typeArray: ["UI/UX Design", "Photo Editing", "Business Card Design", "Video Editing", "Image Tracing"],
       typingSpeed: 200,
       erasingSpeed: 100,
       newTextDelay: 2000,
@@ -88,7 +89,21 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.h3 {
+  position: relative;
+  bottom: -16px;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.name {
+  letter-spacing: 40%;
+}
+
 .cursor {
   display: inline-block;
   margin-left: 3px;
