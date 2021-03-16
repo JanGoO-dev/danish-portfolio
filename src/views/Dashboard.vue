@@ -4,11 +4,11 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right pt-1 pb-3" id="sidebar-wrapper">
-        <img class="img-fluid pt-3 pb-4 px-5 mb-5 border-bottom" width="250" src="/static/images/danish-logo.png">
+        <img class="img-fluid pt-4 pb-4 px-5 mb-5" width="250" src="/static/images/danish-logo.png">
       <!-- <div class="sidebar-heading text-dark">Heading</div> -->
       <div class="list-group">
         <span v-for="(link, index) in navLinks" :key="index" class="mb-2 px-3">
-            <a @mouseover="activateNavHover(index)" @mouseleave="deactivateNavHover(index)" :class="{ 'shadow-lg': link.hover, 'bg-light': !link.hover, 'bg-info': link.hover, 'text-white': link.hover }" :href="link.href" class="border-0 list-group-item list-group-item-action py-3">{{ link.title }}</a>
+            <a @mouseover="activateNavHover(index)" @mouseleave="deactivateNavHover(index)" :class="{ 'shadow-lg': link.hover, 'bg-light': !link.hover, 'bg-info': link.hover, 'text-white': link.hover }" :href="link.href" class="border-0 list-group-item list-group-item-action py-3"><i :class="link.icon" class="mr-3"></i>{{ link.title }}</a>
         </span>
       </div>
     </div>
@@ -19,22 +19,34 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom d-flex justify-content-between">
           
-        <button @click="toggleNav" class="btn btn-info ml-5" id="menu-toggle">Toggle Menu</button>
+        <button @click="toggleNav" class="btn btn-info btn-lg ml-5" id="menu-toggle" style="width: 200px; height: 60px;">
+            <i class="icon-layers2 mr-3 align-center"></i>
+            <span class="align-center">
+                <span v-if="navCollapse">Expand</span>
+                <span v-else>Collapse</span>
+            </span>
+        </button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mt-2 mt-lg-0 py-3 ml-auto mr-5 pl-5">
-            <li class="nav-item border-right">
+          <ul class="navbar-nav mt-2 mt-lg-0 py-2 ml-auto mr-5 pl-5">
+            <li class="nav-item border-right mt-1">
               <a class="nav-link font-weight-bold" href="#" role="button">
-                Danish Fareed
+                <span>
+                    <span><img width="43" class="rounded-circle mr-3" src="/static/images/avatar.png"></span>
+                    <span>Danish Fareed</span>
+                </span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mt-2">
               <a class="nav-link" href="#" role="button">
-                Log Out
+                <span class="h6">
+                    <span>Log Out</span>
+                    <span class="icon-log-out ml-3"></span>
+                </span>
               </a>
             </li>
           </ul>
@@ -42,6 +54,12 @@
       </nav>
 
       <div class="container-fluid bg-light p-5 grid">
+        <div id="alertBox" class="alert alert-success alert-dismissible fade show pt-4" role="alert">
+            <strong>Welcome Back!</strong> <span class="text-dark font-weight-bold">Danish Fareed</span> to your Dashboard. <br> Here you can configure what you want to display on you Portfolio website.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <div v-for="(tile, index) in cardTiles" :key="index" @mouseover="activateTileHover(index)" @mouseleave="deactivateTileHover(index)" class="card grid-item cursor-pointer w-100 h-100" :class="{ 'shadow-lg': tile.hover, 'bg-light': !tile.hover, 'bg-white': tile.hover }">
             <div class="card-body">
                 <h5 class="card-title text-info font-weight-bold">{{ tile.title }}</h5>
@@ -62,13 +80,13 @@ export default {
         return {
             navCollapse: false,
             navLinks: [
-                { href: "#", title: "Dashboard", hover: false },
-                { href: "#", title: "Profile", hover: false },
-                { href: "#", title: "Portfolio", hover: false },
-                { href: "#", title: "Resume", hover: false },
-                { href: "#", title: "About", hover: false },
-                { href: "#", title: "Services", hover: false },
-                { href: "#", title: "Contact", hover: false }
+                { href: "#", title: "Dashboard", icon: "icon-grid2", hover: false },
+                { href: "#", title: "Profile", icon: "icon-profile-male", hover: false },
+                { href: "#", title: "Portfolio", icon: "icon-book-open", hover: false },
+                { href: "#", title: "Resume", icon: "icon-clipboard3", hover: false },
+                { href: "#", title: "About", icon: "icon-wine", hover: false },
+                { href: "#", title: "Services", icon: "icon-toolbox", hover: false },
+                { href: "#", title: "Contact", icon: "icon-chat2", hover: false }
             ],
             cardTiles: [
                 { href: "#", title: "Dashboard", description: "This will display all tiles available to you for customizing your portfolio's each seperate section.", feilds: [{ title: "Profile" }, { title: "Portfolio" }, { title: "Resume" }], hover: false },
@@ -108,6 +126,12 @@ export default {
 </script>
 
 <style scoped>
+i {
+    position: relative;
+    font-size: 1.6em;
+    bottom: -0.165em;
+}
+
 .grid {
     height: calc(100vh - 10%);
     display: grid;
@@ -117,6 +141,10 @@ export default {
 
 .grid div.grid-item {
     grid-column: span 2;
+}
+
+#alertBox {
+    grid-column: span 6;
 }
 
 /* .grid div.grid-item:nth-child(1) {
