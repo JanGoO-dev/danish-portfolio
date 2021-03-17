@@ -51,12 +51,35 @@
 
 <script>
 export default {
-  name: "NavBar"
+  name: "NavBar",
+  data() {
+    return {
+      pageWidth: 0
+    }
+  },
+  computed: {
+    isMobile() {
+      if (this.pageWidth > 995) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', () => {
+      this.pageWidth = window.innerWidth;
+    });
+  }
 };
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.top-0 {
+  top: 0 !important;
+}
 
 .dabba {
   position: fixed;
@@ -97,7 +120,7 @@ li:hover a {
 
 @media (max-width: 1300px) {
   .dabba {
-    display: none;
+    display: none !important;
   }
 }
 
