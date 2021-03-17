@@ -1,5 +1,5 @@
 <template>
-  <section class="site-section " id="section-resume">
+  <section class="site-section" id="section-resume">
     <div class="container">
       <div class="row">
         <div class="col-md-12 mb-5">
@@ -15,6 +15,7 @@
             <img
               @mouseover="hover = true"
               @mouseleave="hover = false"
+              class="mb-5"
               :class="{ 'animate-in': hover, 'animate-out': !hover }"
               src="/static/images/resume.svg"
               alt="Danish Fareed Resume SVG"

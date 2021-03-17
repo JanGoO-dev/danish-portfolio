@@ -150,7 +150,7 @@
 					dabba.removeClass('invisible');
 				}
 				dabba.slideUp();
-			} else if (st > 2000 & st < 4000) {
+			} else if (st > 2000 & st < 3800) {
 				dabba.slideUp();
 			} else if (st > 6400) {
 				dabba.slideUp();
