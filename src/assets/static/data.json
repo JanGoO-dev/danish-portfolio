@@ -1,22 +1,84 @@
 {
-    "personalDetails": {
-        "name": "Danish Fareed",
-        "tagLine": "My Name is "
-    },
-    "projectsDetails": {
-        "dataFilterClasses": [
-            "logo",
-            "app",
-            "web",
-            "mockup"
+    "heroSection": {
+        "line_before_name": "My name is ",
+        "owner_name": "Danish Fareed",
+        "line_before_experties": "I have Experience in ",
+        "owner_experties": [
+            "UI/UX Design", 
+            "Image Tracing", 
+            "Photo Editing", 
+            "Business Card Design", 
+            "Video Editting", 
+            "Illustration"
         ],
-        "featuredProjects": [
-            { "projectTitle": "Square Box Mockup", "tagClass": "logo", "porjectImage": "/static/images/p1.jpg" },
-            { "projectTitle": "Product Box Package Mockup", "tagClass": "logo", "porjectImage": "/static/images/p2.jpg" },
-            { "projectTitle": "Creative Package Design", "tagClass": "app", "porjectImage": "/static/images/p3.jpg" },
-            { "projectTitle": "Packaging Brand", "tagClass": "web", "porjectImage": "/static/images/p4.jpg" },
-            { "projectTitle": "Isometric 3D Extrusion", "tagClass": "app", "porjectImage": "/static/images/p5.jpg" },
-            { "projectTitle": "White Space Photography", "tagClass": "mockup", "porjectImage": "/static/images/p6.jpg" }
+        "hero_owner_image": "/static/images/image_1.jpg"
+    },
+    "portfolioSection": {
+        "project_types": [
+            "logos",
+            "illustrations",
+            "cards",
+            "apps",
+            "websites",
+            "mockups"
+        ],
+        "projects": [
+            { "project_title": "Square Box Mockup", "project_type": "logos", "project_image": "/static/images/p1.jpg", "porject_pdf_link": "#" },
+            { "project_title": "Product Box Package Mockup", "project_type": "illustrations", "project_image": "/static/images/p2.jpg", "porject_pdf_link": "#" },
+            { "project_title": "Creative Package Design", "project_type": "cards", "project_image": "/static/images/p3.jpg", "porject_pdf_link": "#" },
+            { "project_title": "Packaging Brand", "project_type": "apps", "project_image": "/static/images/p4.jpg", "porject_pdf_link": "#" },
+            { "project_title": "Isometric 3D Extrusion", "project_type": "cards", "project_image": "/static/images/p5.jpg", "porject_pdf_link": "#" },
+            { "project_title": "White Space Photography", "project_type": "mockups", "project_image": "/static/images/p6.jpg", "porject_pdf_link": "#" }
+        ]
+    },
+    "resumeSection": {
+        "resume_svg": "/static/images/resume.svg",
+        "resume_pdf_link": "https://drive.google.com/file/d/1xeTN_UEUKNuM46tSql7ZjZsaSeQJ5jnx/preview"
+    },
+    "aboutSection": {
+        "about_owner_image": "/static/images/image_1.jpg",
+        "about_paragraphs": [
+            "As I believe in myself of being passionate and creative about designing, I am looking for good career growth opportunities where my talent and knowledge could be best subjected and utilized in order to deliver my best for the pride and passion for the organization and for personal growth.",
+            "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for."
+        ],
+        "professional_profile_link": "https://www.fiverr.com/danish989/design_minimalist_company_logo",
+        "owner_resume_pdf_link": "https://drive.google.com/file/d/1xeTN_UEUKNuM46tSql7ZjZsaSeQJ5jnx/preview"
+    },
+    "clientTestimonial": {
+        "client_reviews": [
+            { "client_name": "Asad Ali", "client_picture": "/static/images/person_1.jpg", "client_profile_link": "#", "client_review": "Danish did an amazing job creating the perfect logo for our company. He was great at both communicating as well as listening to our particular needs and vision. I will use him again for any future graphic design work." },
+            { "client_name": "Babar Ali", "client_picture": "/static/images/person_2.jpg", "client_profile_link": "#", "client_review": "Danish did an amazing job creating the perfect logo for our company. He was great at both communicating as well as listening to our particular needs and vision. I will use him again for any future graphic design work." },
+            { "client_name": "Muhammad Ali Shahzad", "client_picture": "/static/images/person_2.jpg", "client_profile_link": "#", "client_review": "Danish did an amazing job creating the perfect logo for our company. He was great at both communicating as well as listening to our particular needs and vision. I will use him again for any future graphic design work." },
+            { "client_name": "Atta Fareed", "client_picture": "/static/images/person_4.jpg", "client_profile_link": "#", "client_review": "Danish did an amazing job creating the perfect logo for our company. He was great at both communicating as well as listening to our particular needs and vision. I will use him again for any future graphic design work." }
+        ]
+    },
+    "serviceSection": {},
+    "contactSection": {
+        "contact_emails": [
+            "danishfareed655@gmail.com",
+            "danishfareed.designer@gmail.com"
+        ],
+        "contact_numbers": [
+            "+92 300 69 45 054",
+            "+92 308 47 73 301"
+        ],
+        "address": {
+            "street_number": "Street 4",
+            "city": "Pakpattan",
+            "province": "Punjab",
+            "country": "Pakistan"
+        }
+    },
+    "footerSection": {
+        "social_medias": [
+            { "social_media_name": "Facebook", "profile_link": "#", "icon": "icon-facebook2" },
+            { "social_media_name": "Twitter", "profile_link": "#", "icon": "icon-twitter" },
+            { "social_media_name": "Instagram", "profile_link": "#", "icon": "icon-instagram2" },
+            { "social_media_name": "LinkedIn", "profile_link": "#", "icon": "icon-linkedin2" },
+            { "social_media_name": "Behance", "profile_link": "#", "icon": "icon-behance" },
+            { "social_media_name": "Dribbble", "profile_link": "#", "icon": "icon-dribbble" },
+            { "social_media_name": "Skype", "profile_link": "#", "icon": "icon-skype" },
+            { "social_media_name": "Youtube", "profile_link": "#", "icon": "icon-youtube" }
         ]
     }
 }

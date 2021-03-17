@@ -9,7 +9,7 @@
         </div>
         <div class="col-md-12">
           <a
-            href="https://drive.google.com/file/d/1xeTN_UEUKNuM46tSql7ZjZsaSeQJ5jnx/preview"
+            :href="resumeSectionData.resume_pdf_link"
             target="_blank"
           >
             <img
@@ -17,7 +17,7 @@
               @mouseleave="hover = false"
               class="mb-5"
               :class="{ 'animate-in': hover, 'animate-out': !hover }"
-              src="/static/images/resume.svg"
+              :src="resumeSectionData.resume_svg"
               alt="Danish Fareed Resume SVG"
               draggable="false"
             />
@@ -34,6 +34,11 @@ export default {
   data() {
     return {
       hover: true
+    }
+  },
+  computed: {
+    resumeSectionData() {
+      return this.$store.getters.get_resume_section_obj;
     }
   }
 };

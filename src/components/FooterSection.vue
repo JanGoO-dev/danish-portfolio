@@ -14,28 +14,9 @@
       <div class="row mb-5">
         <div class="col-md-12 text-center">
           <p>
-            <a href="#" class="social-item"
-              ><span class="icon-facebook2"></span
-            ></a>
-            <a href="#" class="social-item"
-              ><span class="icon-twitter"></span
-            ></a>
-            <a href="#" class="social-item"
-              ><span class="icon-instagram2"></span
-            ></a>
-            <a href="#" class="social-item"
-              ><span class="icon-linkedin2"></span
-            ></a>
-            <a href="#" class="social-item"
-              ><span class="icon-behance"></span
-            ></a>
-            <a href="#" class="social-item"
-              ><span class="icon-dribbble"></span
-            ></a>
-            <a href="#" class="social-item"><span class="icon-skype"></span></a>
-            <a href="#" class="social-item"
-              ><span class="icon-youtube"></span
-            ></a>
+            <a @mouseover="hover = true" @mouseleave="hover = false" v-for="(socialMedia, index) in footerSectionData.social_medias" :key="index" :href="socialMedia.profile_link" class="social-item social-media-icon" :class="{ 'shadow-lg': hover }">
+              <span :class="socialMedia.icon"></span>
+            </a>
           </p>
         </div>
       </div>
@@ -45,6 +26,24 @@
 
 <script>
 export default {
-  name: "FooterSection"
+  name: "FooterSection",
+  data() {
+    return {
+      hover: false
+    }
+  },
+  computed: {
+    footerSectionData() {
+      return this.$store.getters.get_footer_section_obj;
+    }
+  }
 };
 </script>
+
+<style scoped>
+.social-media-icon:hover {
+  color: black;
+  background: white;
+  transform: scale(1.2);
+}
+</style>

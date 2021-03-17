@@ -54,19 +54,17 @@
           <ul class="site-contact-details">
             <li>
               <span class="text-uppercase text-warning">Email</span>
-              danishfareed655@gmail.com
+              <div v-for="(email, index) in contactSectionData.contact_emails" :key="index">{{ email }} <br></div>
             </li>
             <li>
               <span class="text-uppercase text-warning">Fax</span>
-              +92 300 69 45 054
-              <br />
-              +92 308 47 73 301
+              <div v-for="(phone, index) in contactSectionData.contact_numbers" :key="index">{{ phone }} <br></div>
             </li>
             <li>
               <span class="text-uppercase text-warning">Address</span>
-              Street 4 <br />
-              Peer Karian <br />
-              Punjab, Pakistan
+              {{ contactSectionData.address.street_number }} <br />
+              {{ contactSectionData.address.city }} <br />
+              {{ contactSectionData.address.province }}, {{ contactSectionData.address.country }}
             </li>
           </ul>
         </div>
@@ -77,6 +75,11 @@
 
 <script>
 export default {
-  name: "ContactSection"
+  name: "ContactSection",
+  computed: {
+    contactSectionData() {
+      return this.$store.getters.get_contact_section_obj;
+    }
+  }
 };
 </script>

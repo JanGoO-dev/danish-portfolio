@@ -1,12 +1,4 @@
 <template>
-  <!-- <transition 
-    appear 
-    enter-active-class="animate__animated animate__bounce" 
-    leave-active-class="animate__animated animate__jello" 
-    mode="out-in"
-  >
-    
-  </transition> -->
   <div class="dabba invisible"></div>
   <nav
     class="navbar navbar-expand-lg site-navbar navbar-light bg-light"
@@ -63,7 +55,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 .dabba {
@@ -96,6 +88,11 @@ export default {
   content: 'Fareed';
   bottom: -66px;
   color: white;
+}
+
+li:hover a {
+  transform: scale(1.2);
+  color: #FFCC01 !important;
 }
 
 @media (max-width: 1300px) {

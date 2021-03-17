@@ -1,6 +1,6 @@
 <template>
   <nav-bar />
-  <hero-section image="/static/images/image_1.jpg" :name="name" :tagLine="tagLine" />
+  <hero-section />
   <portfolio-section />
   <resume-section />
   <about-section />
@@ -32,14 +32,6 @@ export default {
     ServicesSection,
     ContactSection,
     FooterSection
-  },
-  computed: {
-    name() {
-      return this.$store.getters.get_hero_section_name;
-    },
-    tagLine() {
-      return this.$store.getters.get_hero_Section_tagLine;
-    }
   }
 };
 </script>

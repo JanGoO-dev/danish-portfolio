@@ -12,11 +12,11 @@
           <li class="active" data-filter="*">All</li>
           <li
             class="text-capitalize"
-            v-for="(filterClass, index) in projectsData.dataFilterClasses"
+            v-for="(projectType, index) in portfolioSectionData.project_types"
             :key="index"
-            :data-filter="'.' + filterClass"
+            :data-filter="'.' + projectType"
           >
-            {{ filterClass }}
+            {{ projectType }}
           </li>
         </ul>
       </div>
@@ -24,10 +24,10 @@
       <div class="filters-content">
         <div class="row">
           <div
-            v-for="(project, index) in projectsData.featuredProjects"
+            v-for="(project, index) in portfolioSectionData.projects"
             :key="index"
             class="single-portfolio mb-3 col-lg-4 col-md-6 col-sm-12 all position-relative portfolio-card"
-            :class="project.tagClass"
+            :class="project.project_type"
             @mouseover="detectHover(index)"
             @mouseleave="hoverIndex = -1"
           >
@@ -37,15 +37,15 @@
                 <img
                   class="image img-fluid"
                   :class="{ 'decolorize push': index == hoverIndex }"
-                  :src="project.porjectImage"
+                  :src="project.project_image"
                   alt=""
                 />
               </div>
             </div>
             <div class="p-inner ribben p-3" :class="{ 'animate-ribben': index == hoverIndex }">
               <span>
-                <h4 class="text-white">{{ project.projectTitle }}</h4>
-                <div class="cat text-capitalize text-white">{{ project.tagClass }}</div>
+                <h4 class="text-white">{{ project.project_title }}</h4>
+                <div class="cat text-capitalize text-white">{{ project.project_type }}</div>
               </span>
             </div>
           </div>
@@ -64,8 +64,8 @@ export default {
     }
   },
   computed: {
-    projectsData() {
-      return this.$store.getters.get_projects;
+    portfolioSectionData() {
+      return this.$store.getters.get_portfolio_section_obj;
     }
   },
   methods: {

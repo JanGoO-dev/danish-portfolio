@@ -1,7 +1,7 @@
 <template>
   <section
     class="site-hero"
-    :style="{ backgroundImage: 'url(' + image + ')' }"
+    :style="{ backgroundImage: 'url(' + heroSectionData.hero_owner_image + ')' }"
     id="section-home"
     data-stellar-background-ratio="0.5"
   >
@@ -9,21 +9,17 @@
       <div class="row intro-text align-items-center justify-content-center">
         <div class="col-md-10 text-center pt-5">
           <h1 class="site-heading site-animate">
-            <!-- Hello, I'm  -->
-            <!-- <strong class="d-block">
-							{{ name }}
-						</strong> -->
             <span class="d-block text-white text-uppercase letter-spacing">
-              <div class="h3">{{ tagLine }} </div>
-              <strong class="text-light display-4 name">{{ name }}</strong>
+              <div class="h3">{{ heroSectionData.line_before_name }} </div>
+              <strong class="text-light display-4 name">{{ heroSectionData.owner_name }}</strong>
             </span>
           </h1>
           <div class="container">
             <h1>
-              I have experience in
-              <span class="typed-text"
-                ><strong class="text-warning">{{ typeValue }}</strong></span
-              >
+              {{ heroSectionData.line_before_experties }}
+              <span class="typed-text">
+                <strong class="text-warning">{{ typeValue }}</strong>
+              </span>
               <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
             </h1>
           </div>
@@ -38,18 +34,24 @@ import { setTimeout } from "timers";
 
 export default {
   name: "HeroSection",
-  props: ["image", "name", "tagLine"],
   data: () => {
     return {
       typeValue: "",
       typeStatus: false,
-      typeArray: ["UI/UX Design", "Photo Editing", "Business Card Design", "Video Editing", "Image Tracing"],
       typingSpeed: 200,
       erasingSpeed: 100,
       newTextDelay: 2000,
       typeArrayIndex: 0,
       charIndex: 0
     };
+  },
+  computed: {
+    heroSectionData() {
+      return this.$store.getters.get_hero_Section_obj;
+    },
+    typeArray() {
+      return this.heroSectionData.owner_experties;
+    }
   },
   methods: {
     typeText() {
