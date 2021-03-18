@@ -1,5 +1,5 @@
 <template>
-  <div @click="scrollToTop" class="scroll-up-card"></div>
+  <div @click="scrollToTop" class="scroll-up-card d-none"></div>
   <nav-bar />
   <hero-section />
   <portfolio-section />
