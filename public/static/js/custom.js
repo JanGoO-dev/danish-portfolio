@@ -144,8 +144,16 @@
 		   	lastScrollTop = st;
 			
 			var dabba = $('.dabba');
+			var scrollUPBadge = $('.scroll-up-card');
+
+			if (st < 800) {
+				scrollUPBadge.addClass('d-none');
+			} else {
+				scrollUPBadge.removeClass('d-none');
+			}
 
 			if (st < 1000) {
+
 				if (st > 900) {
 					dabba.removeClass('invisible');
 				}
