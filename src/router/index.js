@@ -6,7 +6,7 @@ import Profile from "../views/dashboard/Profile.vue";
 import Portfolio from "../views/dashboard/Portfolio.vue";
 import Resume from "../views/dashboard/Resume.vue";
 import About from "../views/dashboard/About.vue";
-import Services from "../views/dashboard/Services.vue";
+import Testimonial from "../views/dashboard/Testimonial.vue";
 import Contact from "../views/dashboard/Contact.vue";
 
 const routes = [
@@ -49,9 +49,9 @@ const routes = [
         component: About
       },
       {
-        path: "services",
-        name: "Services",
-        component: Services
+        path: "testimonial",
+        name: "Testimonial",
+        component: Testimonial
       },
       {
         path: "contact",

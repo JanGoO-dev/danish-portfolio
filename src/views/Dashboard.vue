@@ -4,7 +4,7 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right pt-1 pb-3" id="sidebar-wrapper">
-        <img class="img-fluid pt-4 pb-4 px-5 mb-5" width="250" src="/static/images/danish-logo.png">
+        <img class="img-fluid pt-4 pb-4 px-5 mb-5" width="250" src="/static/images/danish-logo.png" draggable="false">
       <!-- <div class="sidebar-heading text-dark">Heading</div> -->
       <div class="list-group">
         <span v-for="(link, index) in navLinks" :key="index" class="mb-2 px-3">
@@ -14,11 +14,10 @@
             :class="{ 
               'shadow-lg bg-info text-white': link.hover, 
               'bg-light': !link.hover,
-              'bg-dark text-white': index == clickedIndex | $route.path == link.href
+              'bg-dark text-white': $route.path == link.href
               }" 
               :to="link.href" 
               class="border-0 list-group-item list-group-item-action py-3"
-              @click="detectClick(index)"
           >
             <i :class="link.icon" class="dash-icon mr-3"></i>{{ link.title }}
           </router-link>
@@ -80,15 +79,14 @@ export default {
     data() {
         return {
             navCollapse: false,
-            clickedIndex: -99,
             navLinks: [
                 { href: "/dashboard", title: "Dashboard", icon: "icon-grid2", hover: false },
                 { href: "/dashboard/profile", title: "Profile", icon: "icon-profile-male", hover: false },
                 { href: "/dashboard/portfolio", title: "Portfolio", icon: "icon-book-open", hover: false },
                 { href: "/dashboard/resume", title: "Resume", icon: "icon-clipboard3", hover: false },
                 { href: "/dashboard/about", title: "About", icon: "icon-wine", hover: false },
-                { href: "/dashboard/services", title: "Services", icon: "icon-toolbox", hover: false },
-                { href: "/dashboard/contact", title: "Contact", icon: "icon-chat2", hover: false }
+                { href: "/dashboard/testimonial", title: "Testimonial", icon: "icon-chat2", hover: false },
+                { href: "/dashboard/contact", title: "Contact", icon: "icon-envelope", hover: false }
             ]
         }
     },
@@ -105,9 +103,6 @@ export default {
             } else {
                 this.navCollapse = true;
             }
-        },
-        detectClick(index) {
-          this.clickedIndex = index;
         }
     }
 }

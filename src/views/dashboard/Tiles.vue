@@ -12,7 +12,7 @@
         @mouseleave="deactivateTileHover(index)" 
         @click="executeHREF(tile.href)"
         class="card grid-item cursor-pointer w-100 h-100" 
-        :class="{ 'shadow-lg': tile.hover, 'bg-light': !tile.hover, 'bg-white': tile.hover }"
+        :class="{ 'shadow-lg border-white': tile.hover, 'bg-light': !tile.hover, 'bg-white': tile.hover }"
     >
         <div class="card-body">
             <h5 class="card-title text-info font-weight-bold">{{ tile.title }}</h5>
